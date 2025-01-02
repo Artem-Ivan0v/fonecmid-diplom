@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="351fa56d-b898-4705-b745-7065fd375d38">
+  <producedTypes>
+    <objectType typeId="16fd83da-bd28-42d6-a078-7aaaf5b917c0" valueTypeId="99ed4d27-a8c6-4bfa-a9e3-3373756d3674"/>
+    <refType typeId="211564f4-18c6-463a-a22c-bb17a063b79f" valueTypeId="fe0ec2ef-a511-4613-82f2-5660f18c214b"/>
+    <selectionType typeId="6cf548b5-724a-4292-b92d-5bce8c95e772" valueTypeId="d5feb4ac-286d-4105-8e14-98c3bb8667d6"/>
+    <listType typeId="5f2a98b8-3e0e-4b77-97ee-e2e5aeeddc8a" valueTypeId="ea632215-9301-447d-b4bf-516ddeba021a"/>
+    <managerType typeId="500f2a15-a27d-449e-be52-bfcfa6100c67" valueTypeId="b1c79d2d-c3de-4a1e-90ec-0831ca09d95f"/>
+  </producedTypes>
+  <name>ВКМ_ОбслуживаниеКлиента</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ обслуживание клиента</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_ОбслуживаниеКлиента.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="0b386364-e316-452b-aa6b-8be95a570390">
+    <name>ВКМ_Клиент</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКМ клиент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>
