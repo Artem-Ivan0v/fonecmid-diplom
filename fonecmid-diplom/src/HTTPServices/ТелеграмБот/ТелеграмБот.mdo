@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35df3c43-e6f7-4ddb-b9be-e738007393a8">
+  <name>ТелеграмБот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Телеграм бот</value>
+  </synonym>
+  <rootURL>Telegrambot</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="82abfd34-35e6-4d6a-be36-3a673cdca48b">
+    <name>Ping</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ping</value>
+    </synonym>
+    <template>/ping</template>
+    <methods uuid="abe3bb41-e3ec-40a9-8a35-c05f9a5ff6c2">
+      <name>Ping</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ping</value>
+      </synonym>
+      <handler>PingPing</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="4fb877e8-ba3a-40f2-93e3-3caeae515f57">
+    <name>Send</name>
+    <synonym>
+      <key>ru</key>
+      <value>Send</value>
+    </synonym>
+    <template>/send</template>
+    <methods uuid="421e2790-619b-41e9-a73f-97aeccd9dac0">
+      <name>PostSend</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post send</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>SendPostSend</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

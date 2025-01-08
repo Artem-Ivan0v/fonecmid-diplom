@@ -10,7 +10,7 @@
   <name>ВКМ_ОбслуживаниеКлиента</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ обслуживание клиента</value>
+    <value>Обслуживание клиента</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.ВКМ_ОбслуживаниеКлиента.StandardAttribute.Number</inputByString>
@@ -23,12 +23,13 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ВКМ_ОбслуживаниеКлиента.Form.ВКМ_ФормаДокумента</defaultObjectForm>
-  <defaultListForm>Document.ВКМ_ОбслуживаниеКлиента.Form.ВКМ_ФормаСписка</defaultListForm>
+  <defaultObjectForm>Document.ВКМ_ОбслуживаниеКлиента.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.ВКМ_ОбслуживаниеКлиента.Form.ФормаСписка</defaultListForm>
+  <registerRecords>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="5048447f-44a1-4374-8103-b01eb5b7170a">
-    <name>ВКМ_Клиент</name>
+    <name>Клиент</name>
     <synonym>
       <key>ru</key>
       <value>Клиент</value>
@@ -38,13 +39,12 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="89b7581b-f1a1-46bc-bf96-9b55ed4c226b">
-    <name>ВКМ_Договор</name>
+    <name>Договор</name>
     <synonym>
       <key>ru</key>
       <value>Договор</value>
@@ -54,29 +54,27 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="3c1328e0-1cc9-468e-8490-74ea2c953027">
-    <name>ВКМ_Специалист</name>
+    <name>Специалист</name>
     <synonym>
       <key>ru</key>
       <value>Специалист</value>
     </synonym>
     <type>
-      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.ВКМ_Специалисты</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="d4276147-ff62-4e6d-9b5f-9e32da709367">
-    <name>ВКМ_ДатаПроведенияРабот</name>
+    <name>ДатаПроведенияРабот</name>
     <synonym>
       <key>ru</key>
       <value>Дата проведения работ</value>
@@ -94,10 +92,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="68fdf777-95f2-4b1d-bb25-11c129cc3fb7">
-    <name>ВКМ_ВремяНачалаРабот</name>
+    <name>ВремяНачалаРаботПлан</name>
     <synonym>
       <key>ru</key>
-      <value>Время начала работ</value>
+      <value>Время начала работ (план)</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -112,10 +110,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="d0ba1a8b-d97d-43b5-a31f-1894ebbadc65">
-    <name>ВКМ_ВремяОкончанияРабот</name>
+    <name>ВремяОкончанияРаботПлан</name>
     <synonym>
       <key>ru</key>
-      <value>Время окончания работ</value>
+      <value>Время окончания работ (план)</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -130,16 +128,14 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="15ccec31-15c4-49da-982a-c44c48e069c1">
-    <name>ВКМ_ОписаниеПроблемы</name>
+    <name>ОписаниеПроблемы</name>
     <synonym>
       <key>ru</key>
       <value>Описание проблемы</value>
     </synonym>
     <type>
       <types>String</types>
-      <stringQualifiers>
-        <length>250</length>
-      </stringQualifiers>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -148,7 +144,7 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="25b33ce5-ec4a-4834-9724-f1fea9df73fb">
-    <name>ВКМ_Комментарий</name>
+    <name>Комментарий</name>
     <synonym>
       <key>ru</key>
       <value>Комментарий</value>
@@ -164,7 +160,7 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <forms uuid="1f00650e-c58f-47e5-a29d-a518403ffa0d">
-    <name>ВКМ_ФормаДокумента</name>
+    <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
       <value>Форма документа</value>
@@ -173,7 +169,7 @@
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="4741fcb5-9f9d-496a-93b1-25ccfe3f943b">
-    <name>ВКМ_ФормаСписка</name>
+    <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
       <value>Форма списка</value>
@@ -186,13 +182,13 @@
       <objectType typeId="69d52c6b-4090-4163-8457-12056a379230" valueTypeId="9e89afa1-0dc7-4c5a-91c1-bc3655f45001"/>
       <rowType typeId="1fe9a1d2-1355-44c1-a735-a53765e84972" valueTypeId="6a73363f-1350-4a4c-aded-e394188a317e"/>
     </producedTypes>
-    <name>ВКМ_ВыполненныеРаботы</name>
+    <name>ВыполненныеРаботы</name>
     <synonym>
       <key>ru</key>
       <value>Выполненные работы</value>
     </synonym>
     <attributes uuid="84dcae81-2070-4f36-8cbd-bab8752d4782">
-      <name>ВКМ_ОписаниеРабот</name>
+      <name>ОписаниеРабот</name>
       <synonym>
         <key>ru</key>
         <value>Описание работ</value>
@@ -200,7 +196,7 @@
       <type>
         <types>String</types>
         <stringQualifiers>
-          <length>250</length>
+          <length>500</length>
         </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
@@ -209,7 +205,7 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="52607865-b30f-4a2d-8865-6b5609e58875">
-      <name>ВКМ_ФактическиПотраченоЧасов</name>
+      <name>ФактическиПотраченоЧасов</name>
       <synonym>
         <key>ru</key>
         <value>Фактически потрачено часов</value>
@@ -217,8 +213,8 @@
       <type>
         <types>Number</types>
         <numberQualifiers>
-          <precision>15</precision>
-          <scale>2</scale>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
         </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
@@ -227,16 +223,16 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="17a2a75d-7e5c-405f-8b1c-e67f107636ab">
-      <name>ВКМ_ЧасыКОплате</name>
+      <name>ЧасовКОплатеКлиенту</name>
       <synonym>
         <key>ru</key>
-        <value>Часы к оплате</value>
+        <value>Часов к оплате клиенту</value>
       </synonym>
       <type>
         <types>Number</types>
         <numberQualifiers>
-          <precision>15</precision>
-          <scale>2</scale>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
         </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
