@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Document.РеализацияТоваровУслуг</name>
+		<name>InformationRegister.ВКМ_ГрафикиРаботы</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -312,6 +312,17 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ПрофилиКлючевыхОпераций.TabularSection.КлючевыеОперацииПрофиля.Attribute.Приоритет</name>
 		<right>
 			<name>View</name>
@@ -323,9 +334,87 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ВКМ_МассовоеСозданиеАктов</name>
+		<name>Document.ВКМ_НачислениеЗарплаты</name>
 		<right>
-			<name>Use</name>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_Подразделения</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -345,6 +434,17 @@
 		</right>
 	</object>
 	<object>
+		<name>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ПрофилиКлючевыхОпераций.TabularSection.КлючевыеОперацииПрофиля.Attribute.ЦелевоеВремя</name>
 		<right>
 			<name>View</name>
@@ -353,6 +453,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -466,6 +577,61 @@
 		</right>
 	</object>
 	<object>
+		<name>CalculationRegister.ВКМ_Удержания</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ОсновныеНачисления</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>CalculationRegister.ВКМ_ДополнительныеНачисления</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВКМ_УсловияОплатыСотрудников</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCalculationTypes.ВКМ_Удержания</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Configuration.УправлениеITФирмой</name>
 		<right>
 			<name>ThinClient</name>
@@ -505,7 +671,40 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ДоговорыКонтрагентов</name>
+		<name>Catalog.ВКМ_ГрафикиРаботы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Файлы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВКМ_ГрафикОтпусков</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
