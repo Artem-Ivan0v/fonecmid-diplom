@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e6cdb7f-d8f9-449f-95d2-2414468ff1db">
+  <producedTypes>
+    <selectionType typeId="9278e760-cab9-4f6a-b792-e3b753b66ca1" valueTypeId="66e931ce-d80e-4dd6-bc9b-02687528cf8a"/>
+    <listType typeId="eb8cfd50-6b2a-4acd-b9c5-874b644fc96d" valueTypeId="33085a0d-232c-4e0c-96a9-9a0b205d3a9b"/>
+    <managerType typeId="430a33e2-3e25-4548-b242-56f178a94a15" valueTypeId="2488afc6-414e-492f-b053-4d66bf6422af"/>
+    <recordSetType typeId="6dca6a57-59ef-4eef-9544-448aff5c81d5" valueTypeId="34bb3415-9a66-4c70-a564-f8fa62f4651d"/>
+    <recordKeyType typeId="02e8e4d1-3f53-457b-84c0-ef64710fde31" valueTypeId="cbb37bab-1558-459c-b99e-3e987fec5e32"/>
+    <recordType typeId="74d42cca-16c2-49d6-aee8-1081ab2ce7db" valueTypeId="255cc093-a6c4-4084-b075-a2e0f17241ce"/>
+  </producedTypes>
+  <name>ВКМ_ВзаиморасчетыССотрудниками</name>
+  <synonym>
+    <key>ru</key>
+    <value>Взаиморасчеты с сотрудниками</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+</mdclass:AccumulationRegister>

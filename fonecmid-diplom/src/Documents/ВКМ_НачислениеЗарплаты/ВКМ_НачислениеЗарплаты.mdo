@@ -83,12 +83,8 @@
         <value>Вид расчета</value>
       </synonym>
       <type>
-        <types>String</types>
         <types>ChartOfCalculationTypesRef.ВКМ_ОсновныеНачисления</types>
         <types>ChartOfCalculationTypesRef.ВКМ_ДополнительныеНачисления</types>
-        <stringQualifiers>
-          <length>10</length>
-        </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
