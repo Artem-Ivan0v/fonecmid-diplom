@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bece7e6b-7896-4d6c-83ef-f4f132c40314">
+  <producedTypes>
+    <objectType typeId="54c50a51-09d6-4151-9a4b-04c3cb0bf5da" valueTypeId="7e5fc324-a430-44fa-88e9-e3bb97f09336"/>
+    <refType typeId="62dbb017-d937-49fe-a65d-3e3eb6b4e3de" valueTypeId="53ae6189-2233-4637-b1f1-7b38c7d06c3a"/>
+    <selectionType typeId="775985a6-ac02-44f0-8539-b6d152a50aff" valueTypeId="98917066-b60e-4808-bc53-2f131aa1edb8"/>
+    <listType typeId="fb4e461c-2879-4d34-8f57-ec8d347fdd95" valueTypeId="dbb39fbf-23da-4227-9fdf-f79e04a48c91"/>
+    <managerType typeId="d20a6cd9-9f20-4d47-b257-d9ed710b461a" valueTypeId="59a563c8-9039-47ea-a46a-18ef7b59dfe3"/>
+    <displacingCalculationTypesType typeId="3bf04122-e302-48ba-8ff4-0abbd1160721" valueTypeId="412bdea6-69dd-48c8-be28-2ee29dd9ee02"/>
+    <displacingCalculationTypesRowType typeId="51811daf-0aba-4db1-be41-171676ec5ddb" valueTypeId="3ec931a8-fa7a-403c-9d4e-0ff93c974523"/>
+    <baseCalculationTypesType typeId="968695d5-5c92-48b9-ad2a-a49034dfc717" valueTypeId="fd7f576e-42fa-4e6d-ba69-e9f732939618"/>
+    <baseCalculationTypesRowType typeId="31973269-6605-4e38-a67d-52590c510012" valueTypeId="4b9612c5-c003-4f0b-9aaa-2917e60718ad"/>
+    <leadingCalculationTypesType typeId="48bce615-3db1-49ab-b017-c96c1f96b43a" valueTypeId="dc45e4b4-e5b5-4731-8dff-d7660f6b5fab"/>
+    <leadingCalculationTypesRowType typeId="076136ce-66ca-409d-a34d-14758e118949" valueTypeId="ea58ea1c-9f74-40d5-924a-02c1a64a7bc8"/>
+  </producedTypes>
+  <name>ВКМ_Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.ВКМ_Удержания.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCalculationTypes.ВКМ_Удержания.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
+  <predefined>
+    <items id="8f56beb3-84d2-4017-8dce-3385822e83fa">
+      <name>ВКМ_НДФЛ</name>
+      <description>ВКМ НДФЛ</description>
+      <code xsi:type="core:StringValue">
+        <value>15</value>
+      </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</base>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Премия</base>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</leading>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</leading>
+      <leading>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Премия</leading>
+    </items>
+    <items id="6f53b861-cc4e-45b7-97db-660c2c69a584">
+      <name>НалогНаДоход</name>
+      <description>Налог на доход</description>
+      <code xsi:type="core:StringValue">
+        <value>8</value>
+      </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</base>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Премия</base>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</leading>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</leading>
+      <leading>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Премия</leading>
+    </items>
+  </predefined>
+</mdclass:ChartOfCalculationTypes>

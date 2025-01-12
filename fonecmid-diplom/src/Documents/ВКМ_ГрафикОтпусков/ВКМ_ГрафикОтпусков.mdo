@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58990188-e9ab-4a56-86b0-5b84a9833eb1">
+  <producedTypes>
+    <objectType typeId="ee442849-43de-4969-b399-aa063e9ab431" valueTypeId="06ce6c65-2256-4000-b4f5-9044c07a42ae"/>
+    <refType typeId="b620a9f2-052a-4c13-b165-f8c6a9b87c03" valueTypeId="f1a17e05-07e4-419f-946b-f6eab4aee3cf"/>
+    <selectionType typeId="a9bf6ee3-f260-4b79-a74d-05459e96b452" valueTypeId="ce470adb-fb35-4938-90b2-126cb7db8c68"/>
+    <listType typeId="c62823c4-8547-4335-9523-9119dcf9228a" valueTypeId="98b1bd53-7a5a-4f44-ac31-c488bf3741a4"/>
+    <managerType typeId="4d4d536a-c577-45ae-8772-12b1b4526541" valueTypeId="4b88d8e2-8ae7-47af-9070-b0c4a2027726"/>
+  </producedTypes>
+  <name>ВКМ_ГрафикОтпусков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Графики отпусков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВКМ_ГрафикОтпусков.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+</mdclass:Document>

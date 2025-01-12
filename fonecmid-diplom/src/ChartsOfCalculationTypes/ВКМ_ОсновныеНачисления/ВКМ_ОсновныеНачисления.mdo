@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="678285db-7b9f-4a56-9536-5e04b5478607">
+  <producedTypes>
+    <objectType typeId="e3133957-5b36-4f3e-8500-fce435a9552f" valueTypeId="c50d24ac-1f05-4d8d-bc23-5228f571f62b"/>
+    <refType typeId="d9690eca-3457-4a4c-9dfc-7ff35c1b720c" valueTypeId="00bcc01c-70e7-4815-8e53-64e311870f2f"/>
+    <selectionType typeId="c1b61edc-4936-4cef-9ec7-530947601812" valueTypeId="4a828672-aead-4914-8553-d15ed29c9af6"/>
+    <listType typeId="ef1a2f90-2966-4c77-80e9-103ae0bab9d1" valueTypeId="8b3d1615-5559-471e-801c-d9c5563b5d63"/>
+    <managerType typeId="83669975-11d9-433c-ac3e-6b737c2c0359" valueTypeId="3bffb9b9-5bb7-4ad8-9fdc-8f31dac6ffe5"/>
+    <displacingCalculationTypesType typeId="d2fafb56-904b-44c8-94e2-6be22bfc4234" valueTypeId="747a87bd-eaaf-4c0e-b2f0-5ca0b516aef9"/>
+    <displacingCalculationTypesRowType typeId="5391cad3-5a80-4ca0-8180-711d860b4d83" valueTypeId="901fb11a-0565-4df3-abe3-0d665bc7dfb6"/>
+    <baseCalculationTypesType typeId="4dea8080-8bea-4ef0-ac10-5ee29da5a629" valueTypeId="55c63fe4-0b7c-4750-a4bf-cb1d176a2b7e"/>
+    <baseCalculationTypesRowType typeId="997ebec2-fd25-49ae-8d65-b6f24224c247" valueTypeId="e5f374bd-a6ab-4125-a772-980df1a38954"/>
+    <leadingCalculationTypesType typeId="f01a86f6-909e-4707-9f5f-a21f10e94151" valueTypeId="3cbb6002-87bc-46da-a2da-23f2fb97759e"/>
+    <leadingCalculationTypesRowType typeId="f4b92286-2c41-4640-966e-f3a9b80f43db" valueTypeId="cab4e1e6-de69-4b0a-9149-2dda17de769b"/>
+  </producedTypes>
+  <name>ВКМ_ОсновныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
+  <actionPeriodUse>true</actionPeriodUse>
+  <predefined>
+    <items id="54eeaf73-6725-40b7-b80b-d0163a5a8d2a">
+      <name>Оклад</name>
+      <description>Оклад</description>
+      <code xsi:type="core:StringValue">
+        <value>1</value>
+      </code>
+      <displaced>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</displaced>
+    </items>
+    <items id="79f40a8b-7207-46c9-9e9f-a33e32b26881">
+      <name>Отпуск</name>
+      <description>Отпуск</description>
+      <code xsi:type="core:StringValue">
+        <value>2</value>
+      </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Премия</base>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</leading>
+      <leading>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.Премия</leading>
+    </items>
+  </predefined>
+</mdclass:ChartOfCalculationTypes>
